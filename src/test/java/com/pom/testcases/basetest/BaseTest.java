@@ -73,7 +73,7 @@ public class BaseTest {
 			
 			public void reportFailure(String failureMessage){
 				test.log(LogStatus.FAIL, failureMessage);
-				takeScreenshot();
+				//takeScreenshot();
 				Assert.fail(failureMessage);
 			}
 }
