@@ -15,9 +15,9 @@ public class ExtentManager {   //ReportConfig.xml holds the Report
 	public static ExtentReports getInstance(){
 		if(extent==null){
 			Date d = new Date();
-			String fileName = d.toString().replace(":","_").replace(" ","_")+".html";  //Report will be generated depends on the time
-			String reportPath =Constants.REPORT_PATH+fileName;
-			
+		//	String fileName = d.toString().replace(":","_").replace(" ","_")+".html";  //Report will be generated depends on the time
+			//String reportPath =Constants.REPORT_PATH+fileName;
+			String reportPath =Constants.REPORT_PATH; //I'm changing this because Report is not coming in Jenkins
 			extent = new ExtentReports(reportPath, true, DisplayOrder.NEWEST_FIRST);//Creates the Object of Extent Reports and give the Path where you want to generate the Report...
 			extent.loadConfig(new File(System.getProperty("user.dir")+"//ReportsConfig.xml"));
 			//Optional

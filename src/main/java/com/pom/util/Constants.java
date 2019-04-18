@@ -29,7 +29,7 @@ public class Constants {
 	// Report Path
 	//public static final String REPORT_PATH = "C:\\ExtentReport\\Report\\";
 	//public static final String REPORT_PATH = System.getProperty("user.dir")+"/test-output/ExtentReport.html";
-	public static final String REPORT_PATH = System.getProperty("user.dir")+"/test-output/Extent.Facebook.html_";
+	public static final String REPORT_PATH = System.getProperty("user.dir")+"/test-output/Extent.Facebook.html";
 	
 	//Reading Data 
 	public static final String DATA_XLS_PATH = System.getProperty("user.dir")+"\\src\\main\\java\\com\\pom\\testdata\\Data.xlsx";
